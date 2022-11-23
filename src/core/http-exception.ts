@@ -1,3 +1,4 @@
+//异常基类
 export class HttpException extends Error{
   message: string;
   code: number;
@@ -7,5 +8,15 @@ export class HttpException extends Error{
       this.message = message;
       this.code = code|| 400;
       this.errorCode = errorCode || 1000 ;
+  }
+}
+
+//参数错误
+export class ParameterException extends HttpException {
+  constructor(msg = "参数错误", errorCode = 10000) {
+    super();
+    this.code = 400;
+    this.message = msg;
+    this.errorCode = errorCode;
   }
 }
