@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --config ./scripts/nodemon.json --signal SIGTERM --ignore ./ui/ --ignore ./test/ --exec ts-node ./src/index.ts",
+    "clean": "tsc --build --clean",
+    "build": "npm run clean && tsc --build",
+    "start": "pm2 startOrReload process.config.js --env production",
+    "prebuild": "node ./scripts/version.js",
+    "test": "ts-node ./test/xxxx.ts"
+  },
+  "dependencies": {
+    "got": "^11.8.2",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.13.1",
+    "@types/koa-bodyparser": "^5.0.1",
+    "@types/koa-router": "^7.4.2",
+    "@types/node": "^15.0.2",
+    "execa": "^5.1.1",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.5.2"
+  }
+}
