@@ -1,9 +1,9 @@
 import Koa from 'koa'
 import Router from "koa-router"
 import requireDirectory from "require-directory"
+import { source } from "./../config/index"
 
-
-const whenLoadModule = (obj:Router) => {
+const loadRouters = (obj: Router) => {
   if (obj instanceof Router) {
     InitManager.app.use(obj.routes())
   }
@@ -19,19 +19,19 @@ class InitManager {//初始化管理器
   }
 
   static loadConfig(path = "") {
-    // const configPath = path || `${process.cwd()}/src/config/config.js`;
-    // const config = require(configPath);
-    // global.config = config;
+    const configPath = path || `${source}/config/index`;
+    const config = require(configPath);
+    (global as any).config = config;
   }
 
   static initLoadRouters() {
-    const apiDirectory = `${process.cwd()}/src/router`;//process.cwd() 得到根目录
-    requireDirectory(module, apiDirectory, { visit: whenLoadModule });
+    const apiDirectory = `${source}/app/router`;
+    requireDirectory<Router, Router>(module, apiDirectory, { extensions:["js","ts"],visit: loadRouters  });
   }
 
   static loadHttpException() {
     const errors = require("./http-exception");
-    // global.errs = errors;
+    (global as any).errs = errors;
   }
 }
 

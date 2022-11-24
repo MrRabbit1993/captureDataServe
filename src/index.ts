@@ -1,4 +1,3 @@
-console.log("主页启动");
 import Koa from 'koa';
 import bodyParser from 'koa-bodyparser'; //解决post请求的参数
 
@@ -13,4 +12,6 @@ app.use(bodyParser())
 
 InitManager.initCore(app);
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("3000服务端口启动")
+});
