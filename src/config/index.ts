@@ -5,7 +5,7 @@ export const databaseConfig = {
   host: '1.14.65.173',
   port: 3306,
   user: 'root',
-  password: '123456'
+  password: ''
 }
 export const fuzhou = {
   host: "10.10.160.85",
