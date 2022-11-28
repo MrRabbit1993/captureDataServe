@@ -1,7 +1,7 @@
 import Koa from 'koa'
 import Router from "koa-router"
 import requireDirectory from "require-directory"
-import { source } from "./../config/index"
+import { srcPath } from "./../config/index"
 
 const loadRouters = (obj: Router) => {
   if (obj instanceof Router) {
@@ -19,13 +19,13 @@ class InitManager {//初始化管理器
   }
 
   static loadConfig(path = "") {
-    const configPath = path || `${source}/config/index`;
+    const configPath = path || `${srcPath}/config/index`;
     const config = require(configPath);
     (global as any).config = config;
   }
 
   static initLoadRouters() {
-    const apiDirectory = `${source}/app/router`;
+    const apiDirectory = `${srcPath}/controller`;
     requireDirectory<Router, Router>(module, apiDirectory, { extensions:["js","ts"],visit: loadRouters  });
   }
 

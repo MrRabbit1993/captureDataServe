@@ -1,19 +1,25 @@
-export const environment = "dev"
-export const source = `${process.cwd()}/src` //process.cwd() 得到根目录
-export const databaseConfig = {
-  dbName: 'driving_db',
+const environment = "dev"
+const srcPath = `${process.cwd()}/src` //process.cwd() 得到根目录
+const path = require('path')
+const APIPrefix = "/api"
+const PORT = 3000
+const orm = {
+  type: "mysql",
   host: 'localhost',
   port: 3306,
-  user: 'root',
-  password: ''
+  database: 'driving_db',
+  username: 'root',
+  password: '',
+  synchronize: false,
+  "entities": [
+    path.resolve(__dirname, "./../models/**")
+  ],
 }
-export const fuzhou = {
-  host: "localhost",
-  protocol: "http",
-  prot: "9009",
-  nginxPort: "9008",
-  productUrl:"/entrance/api/templateData"
-}
-export const emo = [
-
-  ]
+// export const fuzhou = {
+//   host: "localhost",
+//   protocol: "http",
+//   prot: "9009",
+//   nginxPort: "9008",
+//   productUrl:"/entrance/api/templateData"
+// }
+export { environment, srcPath, orm, APIPrefix, PORT }

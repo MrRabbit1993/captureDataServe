@@ -1,10 +1,10 @@
 import Router from "koa-router"
 import got from 'got';
 import path from "path"
-import { fuzhou } from "./../../../config/index"
-import MysqlConnection  from "./../../../config/mysql"
+// import { fuzhou } from "./../../../config/index"
+// import MysqlConnection  from "./../../../config/mysql"
 const router = new Router();
-const { protocol, host, prot, productUrl, nginxPort } = fuzhou
+// const { protocol, host, prot, productUrl, nginxPort } = fuzhou
 
 
 

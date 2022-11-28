@@ -49,7 +49,7 @@
     // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                             /* List of folders to include type definitions from. */
     "typeRoots": [
-      "./types/",
+      "src/types",
       "./node_modules/@types",
     ],
     // "types": [],                                 /* Type declaration files to be included in compilation. */
@@ -76,5 +76,5 @@
   "exclude": [
     "node_modules","data"
   ],
-  "include": [ "./src/**/*", "./types/**/*", "./config/**/*"]
+  "include": [ "./src/**/*"]
 }
