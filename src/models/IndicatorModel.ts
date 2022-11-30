@@ -1,5 +1,5 @@
 import { Column, Entity, Index } from "typeorm";
-import { Base } from './Base';
+import { Base } from './BaseModel';
 @Entity()
 export class Indicator extends Base {
   @Column({ name: 'code', nullable: true,'comment':"指标编码" })

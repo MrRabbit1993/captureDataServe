@@ -1,5 +1,5 @@
 import { Column, Entity, Index } from "typeorm";
-import { Base } from './Base';
+import { Base } from './BaseModel';
 @Entity()
 export class User extends Base {
   @Column({ name: 'user_id', nullable: true, 'comment': "用户ID" })
