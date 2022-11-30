@@ -1,12 +1,15 @@
 import Koa from "koa"
 import Router from "koa-router"
-import { APIPrefix }from "./../config"
-const user = new Router<Koa.DefaultState, Koa.DefaultContext>({ prefix: `${APIPrefix}/v1/user` })
-user.post('/add', async (ctx) => {
-  console.log(ctx.request.body)
-  // const { id } = ctx.params
-  // console.log("请求参数", id);
-  // const data = await getIndicatorByCode(id)
-  ctx.body = { code: 0, data:123 }
+import { APIPrefix } from "./../config"
+import UserServe from "./../services/User"
+import { UserParams } from "./../types/user"
+const userController = new Router<Koa.DefaultState, Koa.DefaultContext>({ prefix: `${APIPrefix}/v1/user` })
+userController.post('/add', async (ctx) => {
+  const data = await UserServe.addUser(ctx.request.body as UserParams)
+  ctx.success(data)
 })
-module.exports = user
+userController.post('/update', async (ctx) => {
+  const data = await UserServe.updateUser(ctx.request.body as UserParams)
+  ctx.success(data)
+})
+module.exports = userController

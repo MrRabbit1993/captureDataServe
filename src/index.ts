@@ -17,6 +17,5 @@ AppDataSource.initialize().then(() => {
   InitManager.initCore(app);
   app.listen(PORT, () => {
     console.log(`listen::: http://localhost:${PORT}`)
-});
-
+  })
 }).catch((error) => { console.log("TypeORM connection error: ", error); process.exit(1) });
