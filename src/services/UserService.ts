@@ -2,7 +2,7 @@
 import { Repository } from "typeorm"
 import { User } from "../models/UserModel"
 import { AppDataSource } from "../core/dataSource"
-import { UserParams } from "./../types/user"
+import { UserParams } from "../types/User"
 import { HttpException } from "../core/http-exception";
 class UserServe {
   static repo: Repository<User>

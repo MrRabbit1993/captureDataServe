@@ -1,7 +1,7 @@
 import { Repository } from "typeorm"
 import { Indicator } from "../models/IndicatorModel"
 import { AppDataSource } from "../core/dataSource"
-import { IndicatorParams } from "./../types/Indicator"
+import { IndicatorParams } from "../types/Indicator"
 import { HttpException } from "../core/http-exception";
 class IndicatorServe {
   static repo: Repository<Indicator>

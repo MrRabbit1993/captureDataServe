@@ -1,8 +1,8 @@
 import Koa from "koa"
 import Router from "koa-router"
 import { APIPrefix } from "./../config"
-import UserServe from "./../services/User"
-import { UserParams } from "./../types/user"
+import UserServe from "../services/UserService"
+import { UserParams } from "./../types/User"
 const userController = new Router<Koa.DefaultState, Koa.DefaultContext>({ prefix: `${APIPrefix}/v1/user` })
 userController.post('/add', async (ctx) => {
   await UserServe.addUser(ctx.request.body as UserParams)

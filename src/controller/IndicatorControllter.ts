@@ -1,7 +1,7 @@
 import Koa from "koa"
 import Router from "koa-router"
 import { APIPrefix } from "./../config"
-import IndicatorServe from "./../services/Indicators"
+import IndicatorServe from "../services/IndicatorsService"
 import { IndicatorParams } from "./../types/Indicator"
 const indicator = new Router<Koa.DefaultState, Koa.DefaultContext>({ prefix: `${APIPrefix}/v1/indicator` })
 

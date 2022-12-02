@@ -5,3 +5,7 @@ export function writeFileSync(filePath: any, fileContent: any) {
 export function readFileSync(filePath: any) {
   return fs.readFileSync(filePath,'utf-8')
 }
+
+export function readDirSync(filePath: any) {
+  return fs.readdirSync(filePath)
+}
