@@ -12,7 +12,7 @@ indicator.post('/add', async (ctx) => {
 indicator.get('/query/:code', async (ctx) => {
   const { code } = ctx.params
   const data = await IndicatorServe.queryIndicator(code)
-  ctx.success(data)
+  ctx.success(eval(JSON.parse(data)))
 })
 indicator.get('/del', async (ctx) => {
   const { id } = ctx.request.query

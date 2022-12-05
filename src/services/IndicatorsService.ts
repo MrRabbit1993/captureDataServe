@@ -25,7 +25,11 @@ class IndicatorServe {
   static async queryIndicator(code: number | string) {
     const repo = IndicatorServe.getRepository()
     const response = await repo.createQueryBuilder('indicator').where("indicator.code=:code and indicator.status=:status", { code, status:1 }).getOne()
-    return response
+    if (!response) {
+      throw new HttpException('实例不存在', 404, 200)
+    }
+    const { json } = response
+    return json
   }
   static async updateIndicator(body: IndicatorParams) {
     const repo = IndicatorServe.getRepository()

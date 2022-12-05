@@ -1,0 +1,1 @@
+export { arrToTree } from "./smpleToTree"

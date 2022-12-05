@@ -2,8 +2,9 @@ import { Column, Entity, Index } from "typeorm";
 import { Base } from './BaseModel';
 @Entity()
 export class District extends Base {
+  @Column({ name: 'district_id', length: 32, nullable: true, 'comment': "行政区划ID" })
+  districtId!: string;
   @Column({ name: 'district_no',length:32, nullable: true, 'comment': "行政区划编号" })
-  @Index({ unique: true })
   districtNo!: string;
 
   @Column({ name: 'district_name', nullable: true, 'comment': "行政区划名称" })
