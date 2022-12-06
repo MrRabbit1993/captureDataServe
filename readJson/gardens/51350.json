@@ -1,0 +1,24 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "total": 15,
+      "roadName": "闽江公园北园"
+    },
+    {
+      "total": 8,
+      "roadName": "光明港公园"
+    },
+    {
+      "total": 11,
+      "roadName": "乌龙江公园"
+    },
+    {
+      "total": 6,
+      "roadName": "白马河公园"
+    }
+  ],
+  "totals": null
+}

@@ -1,0 +1,27 @@
+{
+	"code": "200",
+	"success": true,
+	"message": "成功",
+	"data": [{
+			"eventType": "路灯",
+			"eventCount": 295
+		},
+		{
+			"eventType": "污水井盖",
+			"eventCount": 62
+		},
+		{
+			"eventType": "道路破损（塌陷）",
+			"eventCount": 15
+		},
+		{
+			"eventType": "跨河桥",
+			"eventCount": 10
+		},
+		{
+			"eventType": "地下通道",
+			"eventCount": 10
+		}
+	],
+	"totals": null
+}

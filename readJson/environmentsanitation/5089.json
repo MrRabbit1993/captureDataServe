@@ -1,0 +1,7 @@
+{"code":"200","success":true,"message":"成功","data":[
+{"streetName":"南街街道","caseTotal":2,"streetCode":"350102003"},
+{"streetName":"盖山镇","caseTotal":2,"streetCode":"350102005"},
+{"streetName":"安泰街道","caseTotal":6,"streetCode":"350102004"},
+{"streetName":"上渡街道","caseTotal":8,"streetCode":"350102002"},
+{"streetName":"洪山镇","caseTotal":14,"streetCode":"350102001"}
+],"totals":null}

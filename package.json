@@ -7,8 +7,8 @@
     "serve": "nodemon --config ./scripts/nodemon.json --signal SIGTERM --ignore ./ui/ --ignore ./test/ --exec ts-node ./src/index.ts",
     "clean": "tsc --build --clean",
     "build": "npm run clean && tsc --build",
-    "start": "pm2 startOrReload process.config.js --env production",
-    "prebuild": "node ./scripts/version.js",
+    "start1": "pm2 startOrReload process.config.js --env production",
+    "start": " pm2 start ts-node ./src/index.ts --name app -i 1 --interpreter ./node_modules/.bin/ts-node",
     "test": "ts-node ./test/xxxx.ts"
   },
   "dependencies": {

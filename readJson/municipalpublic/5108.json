@@ -1,0 +1,16 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "hiddenTrouble": 7,
+      "buildProblem": 77,
+      "lightingPercent": 5,
+      "reRoadTotal": 7,
+      "buildingTotal": 62,
+      "roadMaintain": 508
+    }
+  ],
+  "totals": null
+}

@@ -1,0 +1,27 @@
+{
+	"code": "200",
+	"success": true,
+	"message": "成功",
+	"data": [{
+			"streetName": "鼓楼区",
+			"caseTotal": 91
+		},
+		{
+			"streetName": "马尾区",
+			"caseTotal": 86
+		},
+		{
+			"streetName": "闽侯区",
+			"caseTotal": 83
+		},
+		{
+			"streetName": "台江区",
+			"caseTotal": 78
+		},
+		{
+			"streetName": "晋安区",
+			"caseTotal": 54
+		}
+	],
+	"totals": null
+}

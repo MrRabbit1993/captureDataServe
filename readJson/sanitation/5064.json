@@ -1,0 +1,14 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "count": 1948200,
+      "effective": 4,
+      "satisfaction": 99.98,
+      "concludeNum": 100
+    }
+  ],
+  "totals": null
+}

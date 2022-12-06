@@ -1,0 +1,28 @@
+{
+        "code": "200",
+        "success": true,
+        "message": "成功",
+        "data": [ 
+                {
+                        "environmentProblem": "垃圾转运",
+                        "caseTotal": 3
+                },
+				{
+                        "environmentProblem": "其他",
+                        "caseTotal": 8
+                },
+				{
+                        "environmentProblem": "公厕保洁",
+                        "caseTotal": 12
+                },
+				{
+                        "environmentProblem": "垃圾分类",
+                        "caseTotal": 16
+                },
+				{
+                        "environmentProblem": "道路保洁",
+                        "caseTotal": 17
+                }
+        ],
+        "totals": null
+}

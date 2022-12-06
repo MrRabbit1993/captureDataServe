@@ -1,0 +1,15 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "wgyOnPercent": 44.6,
+      "wgyTotal": 289,
+      "wgyOnLine": 129,
+      "todayReported": 3466,
+      "effectiveReported": 3405
+    }
+  ],
+  "totals": null
+}

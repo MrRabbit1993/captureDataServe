@@ -1,0 +1,28 @@
+{
+    "code":"200",
+    "success":true,
+    "message":"成功",
+    "data":[
+        {
+            "type":"绿地脏乱",
+            "total":10
+        },
+        {
+            "type":"护树设施",
+            "total":4
+        },
+        {
+            "type":"花架花钵",
+            "total":7
+        },
+        {
+            "type":"水域护栏",
+            "total":8
+        },
+        {
+            "type":"绿地附属设施",
+            "total":5
+        }
+    ],
+    "totals":null
+}
