@@ -1,0 +1,11 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "lightUpRate": 80
+    }
+  ],
+  "totals": null
+}

@@ -1,0 +1,15 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "coverageRate": 75,
+      "resourceRate": 75,
+      "disposal": 10000,
+      "garbage": 8000,
+      "cleanRate": 1.2
+    }
+  ],
+  "totals": null
+}

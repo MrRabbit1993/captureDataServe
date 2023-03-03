@@ -1,0 +1,13 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "disposalRate": 98,
+      "opinion": 2,
+      "satisfaction": 2
+    }
+  ],
+  "totals": null
+}

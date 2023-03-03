@@ -1,0 +1,18 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "harmony": 3,
+      "roadRate": 15,
+      "streetGreen": 30,
+      "poi": 150,
+      "slowDensity": 10,
+      "coverageRate": 90,
+      "carSpeed": 25,
+      "specialActive": 3
+    }
+  ],
+  "totals": null
+}

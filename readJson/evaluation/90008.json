@@ -1,0 +1,17 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "radiusRate": 80,
+      "greenRate": 36,
+      "greenCoverRate": 40,
+      "greenArea": 12,
+      "roadCoverRate": 70,
+      "park": 10,
+      "treeRate": 90
+    }
+  ],
+  "totals": null
+}

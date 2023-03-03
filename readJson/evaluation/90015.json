@@ -1,0 +1,14 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "regulations": 1,
+      "mechanisms": 1,
+      "yearAssess": 1,
+      "budgetary": 1
+    }
+  ],
+  "totals": null
+}

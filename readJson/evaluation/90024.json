@@ -1,0 +1,15 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "tidy": 42,
+      "neat": 23,
+      "orderly": 14,
+      "satisfaction": 15,
+      "composite": 94
+    }
+  ],
+  "totals": null
+}

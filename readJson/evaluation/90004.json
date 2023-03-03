@@ -1,0 +1,12 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "complianceRate": 85,
+      "useRate": 55
+    }
+  ],
+  "totals": null
+}

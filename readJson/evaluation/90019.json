@@ -1,0 +1,15 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "sportArea": 2.5,
+      "buildArea": 1000,
+      "ConvenientCoverRate": 90,
+      "homeRate": 60,
+      "sidewalkRate": 95
+    }
+  ],
+  "totals": null
+}

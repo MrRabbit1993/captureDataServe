@@ -1,0 +1,14 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "busRate": 90,
+      "car": 12,
+      "carRate": 1.1,
+      "totalRate": 2
+    }
+  ],
+  "totals": null
+}

@@ -1,0 +1,17 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "roadClean": 1,
+      "publicClean": 1,
+      "constructionClean": 1,
+      "buildClean":1,
+      "rubbishClean": 1,
+      "waterClean": 1,
+      "density": 1
+    }
+  ],
+  "totals": null
+}

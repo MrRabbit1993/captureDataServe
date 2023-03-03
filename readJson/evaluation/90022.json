@@ -1,0 +1,16 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "convenienceStand": 1,
+      "alongStreet": 1,
+      "noGraffiti": 1,
+      "noDisorderly": 1,
+      "noThrowing": 1,
+      "noRandom": 1
+    }
+  ],
+  "totals": null
+}

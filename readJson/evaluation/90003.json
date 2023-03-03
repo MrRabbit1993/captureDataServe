@@ -1,0 +1,13 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "roadRate": 75,
+      "roadCleanRate": 75,
+      "roadTime": 17
+    }
+  ],
+  "totals": null
+}

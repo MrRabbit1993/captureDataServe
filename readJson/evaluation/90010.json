@@ -1,0 +1,14 @@
+{
+  "code": "200",
+  "success": true,
+  "message": "成功",
+  "data": [
+    {
+      "standard": 1,
+      "advertisement": 1,
+      "greenClean": 1,
+      "street": 1
+    }
+  ],
+  "totals": null
+}
